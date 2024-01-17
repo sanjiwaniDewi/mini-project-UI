@@ -1,0 +1,108 @@
+button {
+    background-color: #820000;
+    color: #f9f3f3;
+    font-family: Nunito, sans-serif;
+    padding: 12px 24px;
+}
+.container {
+    min-width: 85vw;
+}
+
+h1 {
+    font-family: Knewave, system-ui;
+    color: rgba(0, 0, 0, 0.938);
+    font-size: 3rem !important;
+}
+h3 {
+    font-family: Hind;
+}
+
+.nav-link {
+    font-family: Nunito, sans-serif;
+    color: rgba(0, 0, 0, 0.938);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+header {
+    background-image: url(../asset/images/26d0f169ab80d608dbb076155379ca65.jpeg) !important;
+    height: 85vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 1vh;
+}
+
+#title-header {
+    background-color: rgba(217, 217, 217, 0.49);
+    min-height: 83vh;
+    position: relative;
+}
+.title {
+    font-size: 160px;
+    font-family: Knewave, system-ui;
+    color: rgba(0, 0, 0, 0.938);
+}
+.subtitle {
+    font-family: La Belle Aurore;
+    font-size: 56px;
+    text-align: center;
+    line-height: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        font-size: 100px;
+        margin-bottom: 35px !important;
+    }
+    .subtitle {
+        font-size: 40px;
+    }
+    #orderNow {
+        font-size: 20px !important;
+    }
+    #orderNow2 {
+        font-size: 20px !important;
+    }
+    .bi-arrow-right {
+        font-size: 20px !important;
+    }
+}
+.card-body {
+    background-color: rgba(130, 0, 0, 0.45);
+    font-family: Nunito, sans-serif;
+}
+#korean {
+    background-image: url(/asset/images/dfd4d3904d9240451ae2fe2ad83edd8b.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+#koreanCard {
+    background-color: rgba(251, 243, 240, 0.69) !important;
+}
+
+#japanese {
+    background-image: url(/asset/images/japanese.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+#japaneseCard {
+    background-color: rgba(254, 239, 202, 0.59) !important;
+}
+#sushi {
+    background-image: url(/asset/images/sushi.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+#sushiCard {
+    background-color: rgba(241, 188, 159, 0.59) !important;
+}
+
+#drinks {
+    background-image: url(/asset/images/drinks.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+#drinksCard {
+    background-color: rgba(254, 239, 202, 0.59) !important;
+}

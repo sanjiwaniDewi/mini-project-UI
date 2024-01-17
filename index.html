@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600;700&family=Knewave&family=La+Belle+Aurore&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Daps</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar sticky-top position-absolute navbar-expand-lg w-100">
+        <div class="container px-4 py-2">
+          <h1 class="navbar-brand m-0">Dap<span
+              style="color:#820000">s</span></h1>
+          <button class="navbar-toggler border-0 rounded-2" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            style="background-color: #820000; color:#f9f3f3">
+            <span><i class="bi bi-list fs-3" style="color:#f9f3f3"></i> </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup">
+            <div class="navbar-nav me-4 mt-2">
+              <a class="nav-link me-3 " href="#">Home</a>
+              <a class="nav-link me-3 " href="#">Menus</a>
+              <a class="nav-link me-3 " href="#">Orders</a>
+            </div>
+            <button type="button"
+              class="mt-2 border-0 rounded-2 fw-bold"
+              id="contactUs" style="font-size: 18px;">Contact
+              Us</button>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="container position-relative d-flex flex-column justify-content-center align-items-center"
+        id="title-header">
+        <h2 class="title mb-5 ">Dap<span
+            style="color:#820000">s</span></h2>
+        <p class="subtitle">Korean and Japanese Rice Bowls and Sushi</p>
+        <button type="button"
+          class="mt-2 border-0 rounded-2 fw-semibold"
+          id="orderNow" style="font-size: 24px;">Order
+          Now
+          <span><i
+              class="bi bi-arrow-right ms-2"
+              style="font-size: 24px; color:#f9f3f3;"></i></span></button>
+      </div>
+    </header>
+    <section class="container mt-5 p-0">
+      <h3 class="text-center mb-4 fw-bold fs-1">Hot Promos</h3>
+      <div class="w-100 d-flex justify-content-center">
+        <div id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/asset/images/promo/image.png" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/asset/images/promo/image (1).png" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/asset/images/promo/image (2).png" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/asset/images/promo/image (3).png" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mt-5 p-0">
+      <h3 class="text-center mb-4 fw-bold fs-1">Favorite Menus</h3>
+
+      <section id="favorite">
+        <h4 class="mb-3">Favorites</h4>
+        <div class="d-flex justify-content-between flex-wrap">
+          <div class="card rounded-0 mb-2" style="width: 15rem;">
+            <div class="position-relative rounded-0">
+              <img src="./asset/images/dfd4d3904d9240451ae2fe2ad83edd8b.jpeg"
+                class="card-img-top rounded-0" alt="...">
+            </div>
+            <div
+              class="position-absolute accordion w-100 h-100 d-flex align-items-end">
+              <div class="card-body">
+                <p
+                  class="card-text text-center fw-bold text-light fs-4 py-3">Salmon
+                  bowl</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 mb-2" style="width: 15rem;">
+            <div class="position-relative rounded-0">
+              <img src="./asset/images/dfd4d3904d9240451ae2fe2ad83edd8b.jpeg"
+                class="card-img-top rounded-0" alt="...">
+            </div>
+            <div
+              class="position-absolute accordion w-100 h-100 d-flex align-items-end">
+              <div class="card-body">
+                <p
+                  class="card-text text-center fw-bold text-light fs-4 py-3">Salmon
+                  bowl</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 mb-2" style="width: 15rem;">
+            <div class="position-relative rounded-0">
+              <img src="./asset/images/dfd4d3904d9240451ae2fe2ad83edd8b.jpeg"
+                class="card-img-top rounded-0" alt="...">
+            </div>
+            <div
+              class="position-absolute accordion w-100 h-100 d-flex align-items-end">
+              <div class="card-body">
+                <p
+                  class="card-text text-center fw-bold text-light fs-4 py-3">Salmon
+                  bowl</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 mb-2" style="width: 15rem;">
+            <div class="position-relative rounded-0">
+              <img src="./asset/images/dfd4d3904d9240451ae2fe2ad83edd8b.jpeg"
+                class="card-img-top rounded-0" alt="...">
+            </div>
+            <div
+              class="position-absolute accordion w-100 h-100 d-flex align-items-end">
+              <div class="card-body">
+                <p
+                  class="card-text text-center fw-bold text-light fs-4 py-3">Salmon
+                  bowl</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 mb-2" style="width: 15rem;">
+            <div class="position-relative rounded-0">
+              <img src="./asset/images/dfd4d3904d9240451ae2fe2ad83edd8b.jpeg"
+                class="card-img-top rounded-0" alt="...">
+            </div>
+            <div
+              class="position-absolute accordion w-100 h-100 d-flex align-items-end">
+              <div class="card-body">
+                <p
+                  class="card-text text-center fw-bold text-light fs-4 py-3">Salmon
+                  bowl</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 mb-2" style="width: 15rem;">
+            <div class="position-relative rounded-0">
+              <img src="./asset/images/dfd4d3904d9240451ae2fe2ad83edd8b.jpeg"
+                class="card-img-top rounded-0" alt="...">
+            </div>
+            <div
+              class="position-absolute accordion w-100 h-100 d-flex align-items-end">
+              <div class="card-body">
+                <p
+                  class="card-text text-center fw-bold text-light fs-4 py-3">Salmon
+                  bowl</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section
+        class="container d-flex justify-content-center align-items-center mt-5">
+        <button type="button"
+          class="mt-2 border-0 rounded-2 fw-semibold"
+          id="orderNow2" style="font-size: 24px;">Order
+          Now
+          <span><i
+              class="bi bi-arrow-right ms-2"
+              style="font-size: 24px; color:#f9f3f3;"></i></span></button>
+      </section>
+      <section id="category" class="mt-5 mb-5">
+        <h4 class="mb-3">Category</h4>
+        <div class="d-flex justify-content-sm-between flex-wrap">
+          <div class="card rounded-0 p-0 border-0 mt-2"
+            style="width: 285px ; height:225px " id="korean">
+            <div class="card-body p-0 m-0 border-0" id="koreanCard">
+              <button
+                class="btn border-0 rounded-0 bg-transparent fs-3 fw-semibold"
+                style="width: 285px; height: 225px;">Korean <br> Rice
+                Bowls</button>
+            </div>
+          </div>
+          <div class="card rounded-0 p-0 border-0 mt-2"
+            style="width: 285px ; height:225px " id="japanese">
+            <div class="card-body p-0 m-0 border-0" id="japaneseCard">
+              <button
+                class="btn border-0 rounded-0 bg-transparent fs-3 fw-semibold"
+                style="width: 285px; height: 225px;">Japanese <br> Rice
+                Bowls</button>
+            </div>
+          </div>
+          <div class="card rounded-0 p-0 border-0 mt-2"
+            style="width: 285px ; height:225px " id="sushi">
+            <div class="card-body p-0 m-0 border-0" id="sushiCard">
+              <button
+                class="btn border-0 rounded-0 bg-transparent fs-3 fw-semibold"
+                style="width: 285px; height: 225px;">Sushi</button>
+            </div>
+          </div>
+          <div class="card rounded-0 p-0 border-0 mt-2"
+            style="width: 285px ; height:225px " id="drinks">
+            <div class="card-body p-0 m-0 border-0" id="drinksCard">
+              <button
+                class="btn border-0 rounded-0 bg-transparent fs-3 fw-semibold"
+                style="width: 285px; height: 225px;">Drinks</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
