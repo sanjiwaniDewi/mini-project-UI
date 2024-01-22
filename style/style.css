@@ -13,7 +13,8 @@ h1 {
     color: rgba(0, 0, 0, 0.938);
     font-size: 3rem !important;
 }
-h3 {
+h3,
+h5 {
     font-family: Hind;
 }
 
@@ -105,4 +106,18 @@ header {
 }
 #drinksCard {
     background-color: rgba(254, 239, 202, 0.59) !important;
+}
+#services {
+    background-color: rgba(232, 223, 223, 0.34);
+}
+#dineIn,
+#brithDay {
+    background-color: rgba(130, 0, 0, 0.15);
+}
+#delivery,
+#catering {
+    background-color: rgba(0, 0, 0, 0.21);
+}
+footer {
+    background-color: rgba(36, 14, 14, 0.13);
 }
