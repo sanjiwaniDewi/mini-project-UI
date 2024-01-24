@@ -1,0 +1,33 @@
+button {
+    background-color: #820000;
+    color: #f9f3f3;
+    font-family: Nunito, sans-serif;
+    padding: 12px 24px;
+}
+.container {
+    min-width: 85vw;
+}
+h1,
+h6 {
+    font-family: Knewave, system-ui;
+    color: rgba(0, 0, 0, 0.938);
+}
+h1 {
+    font-size: 3rem !important;
+}
+#title {
+    font-family: Hind;
+    font-size: 48px !important;
+    line-height: 0.6;
+}
+h6 {
+    font-size: 24px !important;
+    margin-left: 4rem !important;
+}
+.card-body {
+    background-color: rgba(130, 0, 0, 0.45);
+}
+
+footer {
+    background-color: rgba(36, 14, 14, 0.13);
+}
