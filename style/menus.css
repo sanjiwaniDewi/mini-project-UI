@@ -1,3 +1,7 @@
+main {
+    background-color: #fffcf5f2;
+}
+
 button {
     background-color: #820000;
     color: #f9f3f3;
@@ -30,4 +34,18 @@ h6 {
 
 footer {
     background-color: rgba(36, 14, 14, 0.13);
+}
+
+.purches {
+    border-bottom: 1px dashed grey;
+}
+.amount:focus {
+    outline: none;
+}
+#purchesList {
+    background-color: #ecd8d8 !important;
+}
+.cancel {
+    color: rgba(0, 0, 0, 0.44);
+    background-color: rgba(236, 216, 216, 0.31);
 }
