@@ -1,8 +1,13 @@
-button {
+button,
+.orderNow {
     background-color: #820000;
     color: #f9f3f3;
     font-family: Nunito, sans-serif;
     padding: 12px 24px;
+}
+
+.orderNow {
+    text-decoration: none;
 }
 .container {
     min-width: 85vw;
@@ -120,4 +125,9 @@ header {
 }
 footer {
     background-color: rgba(36, 14, 14, 0.13);
+}
+.favoriteMenu {
+    @media (max-width: 575.98px) {
+        justify-content: flex-start;
+    }
 }
