@@ -4,7 +4,7 @@ const data = [
         type: "Korean Bowls",
         name: "Korean bibimbab",
         price: 25000,
-        purches: 145,
+        purches: 745,
         img: "../asset/images/menu/korea/63d20fac11f7cf217c8b9482343aa610.jpg",
         ingrediance: [
             "onion",
@@ -22,7 +22,7 @@ const data = [
         type: "Korean Bowls",
         name: "Premium korean bibimbab",
         price: 25000,
-        purches: 145,
+        purches: 645,
         img: "../asset/images/menu/korea/63d20fac11f7cf217c8b9482343aa610.jpg",
         ingrediance: [
             "onion",
@@ -40,7 +40,7 @@ const data = [
         type: "Korean Bowls",
         name: "Korean Salmon Gochujang",
         price: 25000,
-        purches: 145,
+        purches: 545,
         img: "../asset/images/menu/korea/63d20fac11f7cf217c8b9482343aa610.jpg",
         ingrediance: [
             "onion",
@@ -58,7 +58,7 @@ const data = [
         type: "Japanese Bowls",
         name: "Curry Bowls",
         price: 25000,
-        purches: 145,
+        purches: 245,
         img: "../asset/images/menu/japan/japanese.jpeg",
         ingrediance: [
             "onion",
@@ -76,7 +76,7 @@ const data = [
         type: "Japanese Bowls",
         name: "Salmon Mentai Bowls",
         price: 25000,
-        purches: 145,
+        purches: 545,
         img: "../asset/images/menu/japan/6df188d8033561c02b106b5dfcbb7610.jpg",
         ingrediance: [
             "onion",
@@ -108,6 +108,132 @@ const data = [
         description:
             "deep fried beef with onion and gocujang pase and rice with aromatic ginger",
     },
+    {
+        id: "uuid7",
+        type: "Sushi",
+        name: "Salmon Mentai Bowls",
+        price: 25000,
+        purches: 145,
+        img: "../asset/images/menu/japan/6df188d8033561c02b106b5dfcbb7610.jpg",
+        ingrediance: [
+            "onion",
+            "gochujang pase",
+            "beef",
+            "rice",
+            "garlic",
+            "ginger",
+        ],
+        description:
+            "deep fried beef with onion and gocujang pase and rice with aromatic ginger",
+    },
+    {
+        id: "uuid8",
+        type: "Sushi",
+        name: "Salmon Mentai Bowls",
+        price: 25000,
+        purches: 145,
+        img: "../asset/images/menu/japan/6df188d8033561c02b106b5dfcbb7610.jpg",
+        ingrediance: [
+            "onion",
+            "gochujang pase",
+            "beef",
+            "rice",
+            "garlic",
+            "ginger",
+        ],
+        description:
+            "deep fried beef with onion and gocujang pase and rice with aromatic ginger",
+    },
+    {
+        id: "uuid9",
+        type: "Sushi",
+        name: "Salmon Mentai Bowls",
+        price: 25000,
+        purches: 145,
+        img: "../asset/images/menu/japan/6df188d8033561c02b106b5dfcbb7610.jpg",
+        ingrediance: [
+            "onion",
+            "gochujang pase",
+            "beef",
+            "rice",
+            "garlic",
+            "ginger",
+        ],
+        description:
+            "deep fried beef with onion and gocujang pase and rice with aromatic ginger",
+    },
+    {
+        id: "uuid10",
+        type: "Sushi",
+        name: "Salmon Mentai Bowls",
+        price: 25000,
+        purches: 145,
+        img: "../asset/images/menu/japan/6df188d8033561c02b106b5dfcbb7610.jpg",
+        ingrediance: [
+            "onion",
+            "gochujang pase",
+            "beef",
+            "rice",
+            "garlic",
+            "ginger",
+        ],
+        description:
+            "deep fried beef with onion and gocujang pase and rice with aromatic ginger",
+    },
+    {
+        id: "uuid11",
+        type: "Sushi",
+        name: "Salmon Mentai Bowls",
+        price: 25000,
+        purches: 145,
+        img: "../asset/images/menu/japan/6df188d8033561c02b106b5dfcbb7610.jpg",
+        ingrediance: [
+            "onion",
+            "gochujang pase",
+            "beef",
+            "rice",
+            "garlic",
+            "ginger",
+        ],
+        description:
+            "deep fried beef with onion and gocujang pase and rice with aromatic ginger",
+    },
+    {
+        id: "uuid12",
+        type: "Sushi",
+        name: "Salmon Mentai Bowls",
+        price: 25000,
+        purches: 145,
+        img: "../asset/images/menu/japan/6df188d8033561c02b106b5dfcbb7610.jpg",
+        ingrediance: [
+            "onion",
+            "gochujang pase",
+            "beef",
+            "rice",
+            "garlic",
+            "ginger",
+        ],
+        description:
+            "deep fried beef with onion and gocujang pase and rice with aromatic ginger",
+    },
+    {
+        id: "uuid13",
+        type: "Sushi",
+        name: "Salmon Mentai Bowls",
+        price: 25000,
+        purches: 145,
+        img: "../asset/images/menu/japan/6df188d8033561c02b106b5dfcbb7610.jpg",
+        ingrediance: [
+            "onion",
+            "gochujang pase",
+            "beef",
+            "rice",
+            "garlic",
+            "ginger",
+        ],
+        description:
+            "deep fried beef with onion and gocujang pase and rice with aromatic ginger",
+    },
 ];
 
 function removeSpace(char) {
@@ -119,13 +245,13 @@ function removeSpace(char) {
 
 const addTitleMenu = (type) => {
     return `
-        <div class="mt-4 pt-3">
-        <h3 class="fs-3 fw-bold">${type}</h3>
-        <div class="mt-1">
-          <div class="row mt-3 row-cols-auto gx-3 gy-1" id=${removeSpace(type)}>
-
+     <div class="mt-4 pt-3">
+        <h3 class="fs-3 fw-bold">${type}</h3> 
+        <div class="wrap px-0 mt-3">
+          <div class="carousels" id=${removeSpace(type)}>
           </div>
         </div>
+
       </div>
   `;
 };
@@ -197,35 +323,29 @@ function findId(id) {
 }
 
 const addMenu = (img, price, name, id) => {
-    return `             
-    <div class="col" >
-      <button class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#${id}" onClick=findId("${id}")>
-      <div class="card rounded-0 mb-2" style="width: 15rem;">
-        <div class="position-relative rounded-0">
-          <img
-            src=${img}
-            class="card-img-top rounded-0 object-fit-cover" alt="..." height="298px"
-                      width="238px">
+    return `
+        <div class="bg-transparent  mt-2 mx-0 border-0 p-0 content" >
+              <div class="card border-0 mb-2" style="width: 15rem;">
+                <div class="rounded-4">
+                  <img
+                    src=${img}
+                    class="card-img-top rounded-4 object-fit-cover" alt="food"
+                    height="250px">
+                </div>
+
+                <div class="card-body mt-0 pt-1">
+                  <button
+                    class="card-text text-wrap text-start fw-bold text-dark fs-5 mb-0 bg-transparent  mt-2 mx-0 border-0 p-0"
+                    style="font-family: hind; line-height: 1.2;"  data-bs-toggle="modal"
+                    data-bs-target="#${id}" onClick=findId("${id}")>${name}</button>
+                  <p
+                    class="card-text text-start text-dark fs-6 fw-medium my-0 pt-1">Rp${convertPrice(
+                        price
+                    )}</p>
+                </div>
+              </div>
         </div>
-        <div
-          class="position-absolute w-100 d-flex align-items-top">
-            <div class="card-body py-2">
-              <p
-                class="card-text text-center fw-bold text-light fs-5 py-0 px-0 my-0">Rp${convertPrice(
-                    price
-                )}</p>
-            </div>
-        </div>
-        <div
-          class="position-absolute accordion w-100 h-100 d-flex align-items-end">
-            <div class="card-body py-0 d-flex justify-content-center align-items-center" style="height:80px">
-              <p
-                class="card-text text-center fw-bold text-light fs-5">${name}</p>
-            </div>
-        </div>
-      </div>
-    </button>        
-    </div>   
+      
     `;
 };
 
@@ -238,3 +358,34 @@ data.forEach((element) => {
         element.id
     );
 });
+
+const carousel = document.querySelectorAll(".carousels");
+
+for (let i = 0; i < carousel.length; i++) {
+    let isDragStart = false,
+        prevPageX,
+        prevScrollLeft;
+
+    const dragStart = (e) => {
+        // updatating global variables value on mouse down event
+        isDragStart = true;
+        prevPageX = e.pageX;
+        prevScrollLeft = carousel[i].scrollLeft;
+    };
+
+    const dragging = (e) => {
+        // scrolling images/carousel to left according to mouse pointer
+        if (!isDragStart) return;
+        e.preventDefault();
+        positionDiff = e.pageX - prevPageX;
+        carousel[i].scrollLeft = prevScrollLeft - positionDiff;
+    };
+
+    const dragStop = () => {
+        isDragStart = false;
+    };
+
+    carousel[i].addEventListener("mousedown", dragStart);
+    document.addEventListener("mousemove", dragging);
+    document.addEventListener("mouseup", dragStop);
+}
