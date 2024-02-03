@@ -45,8 +45,19 @@ h6 {
     font-weight: 800;
 }
 
-footer {
-    background-color: rgba(36, 14, 14, 0.13);
+.button-modal:hover {
+    color: #820000 !important;
+    font-size: 22px !important;
+}
+
+.card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.11);
+    border-radius: 1.5rem;
+    transform: translate3D(0, -1px, 0) scale(1.03); /* move up slightly and zoom in */
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+        1px 6px 12px rgba(39, 44, 49, 0.04);
+    transition: all 0.4s ease; /* zoom in */
+    cursor: pointer;
 }
 
 .purches {
@@ -82,6 +93,19 @@ select {
     border-radius: 0 32px 32px 0;
 }
 
+@media screen and (max-width: 980px) {
+    .formImg,
+    .formImgResv,
+    .formImgResv img {
+        display: none !important;
+    }
+    .containForm,
+    .containFormReservation {
+        width: 100vw !important;
+        border-radius: 32px;
+    }
+}
+
 .containForm button,
 .containFormReservation button {
     background-color: #000000;
@@ -113,5 +137,71 @@ select {
 @media (max-width: 575.98px) {
     .carousels .card {
         width: 16rem !important;
+    }
+}
+
+footer {
+    background-color: rgba(36, 14, 14, 0.13);
+}
+
+@media screen and (max-width: 1300px) {
+    #floatingEmail {
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .topFooter {
+        flex-wrap: wrap;
+    }
+    .footerLogo {
+        width: 50vw;
+    }
+    .footerSubscribe {
+        justify-content: center !important;
+        width: 100vw;
+    }
+    .footerSubscribeChild {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #floatingEmail {
+        width: 320px !important;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .footerLogo {
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .footerLogo {
+        width: 100vw;
+        margin-top: 1rem;
+    }
+
+    .footerLink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .footerSubscribe {
+        justify-content: center !important;
+        width: 100vw;
+    }
+    .footerSubscribeChild {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        text-align: center;
+    }
+
+    #floatingEmail {
+        width: 325px !important;
     }
 }
