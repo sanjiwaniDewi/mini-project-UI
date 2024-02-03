@@ -26,33 +26,39 @@
   <body>
     <header class="container-fluid sticky-top">
       <nav
-        class="navbar navbar-expand-lg w-100">
-        <div class="container py-2">
+        class="navbar navbar-expand-lg w-100 rounded-bottom-4 py-2">
+
+        <div
+          class="container">
           <h1 class="navbar-brand m-0">Dap<span
               style="color:#820000">s</span></h1>
           <button class="navbar-toggler border-0 rounded-2" type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
             style="background-color: #820000; color:#f9f3f3">
-            <span><i class="bi bi-list fs-3" style="color:#f9f3f3"></i> </span>
+            <span><i class="bi bi-list fs-3" style="color:#f9f3f3"></i>
+            </span>
           </button>
           <div class="collapse navbar-collapse justify-content-end"
             id="navbarNavAltMarkup">
             <div class="navbar-nav me-4 mt-2">
-              <a class="nav-link me-3 fw-bolder fs-5 text-dark"
+              <a class="nav-link me-3"
                 href="../index.html">Home</a>
-              <a class="nav-link me-3 fw-bolder fs-5 text-dark"
+              <a class="nav-link me-3"
                 href="./menus.html">Menus</a>
-              <a class="nav-link me-3 fw-bolder fs-5 text-dark"
-                href="#">Orders</a>
+              <a class="nav-link me-3"
+                href="?#">Orders</a>
             </div>
             <button type="button"
               class="mt-2 border-0 rounded-2 fw-bold"
               id="contactUs" style="font-size: 18px;">Contact
               Us</button>
           </div>
+
         </div>
+
       </nav>
+
     </header>
 
     <main class="container mt-5 mb-5" style="min-height: 570px;">
@@ -67,265 +73,307 @@
         <ul class="nav nav-underline">
           <li class="nav-item">
             <a class="nav-link active px-3 text-dark" id="delLink"
-              onclick="handleNavDelivery()"
-              aria-current="page" href="#">Delivery</a>
+              onclick="handleNavDelivery()" href="#"
+              aria-current="page">Delivery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-2 text-dark" id="resLink"
-              onclick="handleNavReservation()"
-              href="#">Reservation</a>
+              onclick="handleNavReservation()" href="#">Reservation</a>
           </li>
         </ul>
       </section>
-      <section class="container mt-2 d-flex justify-content-center">
-        <form class="pt-4" style="width: 400px; display: block;" id="delivery">
-          <div class="form-floating mb-1">
-            <input type="text" class="form-control" id="floatingName"
-              placeholder="Name">
-            <label for="floatingInput">Name</label>
-          </div>
-          <div class="form-floating mb-1">
-            <input type="number" class="form-control" id="floatingPhone"
-              placeholder="Phone Number">
-            <label for="floatingPassword">Phone Number</label>
-          </div>
-          <div class="row gx-1">
-            <div class="col">
-              <select class="form-select form-select-lg mb-1 rounded-2 fs-6">
-                <option selected>Area</option>
-                <option value="1">Jakarta</option>
-                <option value="2">Bandung</option>
-                <option value="3">Bogor</option>
-                <option value="3">Tangerang</option>
-              </select>
-            </div>
-            <div class="col">
-              <select class="form-select form-select-lg mb-1 rounded-2 fs-6">
-                <option selected>District</option>
-                <option value="1">Jakarta</option>
-                <option value="2">Bandung</option>
-                <option value="3">Bogor</option>
-                <option value="3">Tangerang</option>
-              </select>
+      <section class="container mt-2 d-flex">
+        <div id="delivery" style="display: block;" class="w-100 mt-5">
+          <div class="d-flex justify-content-center boxshadow">
+            <div class="w-50 d-flex justify-content-center p-5 containForm">
+              <form class="pt-4" style="width: 415px;">
+                <div class="form-floating mb-1">
+                  <input type="text" class="form-control" id="floatingName"
+                    placeholder="Name">
+                  <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-1">
+                  <input type="number" class="form-control" id="floatingPhone"
+                    placeholder="Phone Number">
+                  <label for="floatingPassword">Phone Number</label>
+                </div>
+                <div class="row gx-1">
+                  <div class="col">
+                    <select
+                      class="form-select form-select-lg mb-1 rounded-2 fs-6">
+                      <option selected>Area</option>
+                      <option value="1">Jakarta</option>
+                      <option value="2">Bandung</option>
+                      <option value="3">Bogor</option>
+                      <option value="3">Tangerang</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select
+                      class="form-select form-select-lg mb-1 rounded-2 fs-6">
+                      <option selected>District</option>
+                      <option value="1">Jakarta</option>
+                      <option value="2">Bandung</option>
+                      <option value="3">Bogor</option>
+                      <option value="3">Tangerang</option>
+                    </select>
 
+                  </div>
+
+                </div>
+                <div class="form-floating mb-1">
+                  <textarea class="form-control" placeholder="Detail Address"
+                    id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Detail Address</label>
+                </div>
+                <div class="row gx-1 d-flex justify-content-between">
+                  <div class="col-xl-8 col-sm-12 form-floating mb-1">
+                    <input type="text" class="form-control" id="floatingCode"
+                      placeholder="Phone Number">
+                    <label for="floatingPassword">Disound Code</label>
+                  </div>
+                  <div class="col text-end m-0">
+                    <button type="button"
+                      class="border-0 rounded-1 w-100 fw-bold fs-6 py-3 btn">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+
+                <div class="mt-1 px-3 py-4 rounded-1 mb-4" id="purchesList">
+                  <div class="m-0 p-0">
+                    <div class="row purches mx-1 mb-2 pb-2">
+                      <div class="col text-start px-0 align-self-center">
+                        <p class="food m-0 p-0">Korean Bowls</p>
+                      </div>
+                      <div class="col d-flex justify-content-between px-0">
+                        <button class="border-0 w-25 p-0 me-2 rounded-1">
+                          -
+                        </button>
+                        <input
+                          class="border-0 w-25 rounded-1 amount text-center"
+                          value="1">
+                        <button class="border-0 w-25 p-0 ms-2 rounded-1">
+                          +
+                        </button>
+                      </div>
+                      <div class="col text-end px-0 align-self-center">
+                        <p class="price m-0 p-0">Rp. 25.000</p>
+                      </div>
+                    </div>
+                    <div class="row purches mx-1 mb-2 pb-2">
+                      <div class="col text-start px-0 align-self-center">
+                        <p class="food m-0 p-0">Japanese Bowls</p>
+                      </div>
+                      <div class="col d-flex justify-content-between px-0">
+                        <button class="border-0 w-25 p-0 me-2 rounded-1">
+                          -
+                        </button>
+                        <input
+                          class="border-0 w-25 rounded-1 amount text-center"
+                          value="1">
+                        <button class="border-0 w-25 p-0 ms-2 rounded-1">
+                          +
+                        </button>
+                      </div>
+                      <div class="col text-end px-0 align-self-center">
+                        <p class="price m-0 p-0">Rp. 25.000</p>
+                      </div>
+                    </div>
+                    <div class="row purches mx-1 mb-2 pb-2">
+                      <div class="col text-start px-0 align-self-center">
+                        <p class="food m-0 p-0">Sushi</p>
+                      </div>
+                      <div class="col d-flex justify-content-between px-0">
+                        <button class="border-0 w-25 p-0 me-2 rounded-1 btn">
+                          -
+                        </button>
+                        <input
+                          class="border-0 w-25 rounded-1 amount text-center"
+                          value="1">
+                        <button class="border-0 w-25 p-0 ms-2 rounded-1 btn">
+                          +
+                        </button>
+                      </div>
+                      <div class="col text-end px-0 align-self-center">
+                        <p class="price m-0 p-0">Rp. 25.000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="border-top border-dark mt-3 px-1">
+                    <div class="row my-1">
+                      <div class="col text-start">
+                        <p class="m-0 p-0">Total Item</p>
+                      </div>
+                      <div class="col text-end">
+                        <p class="m-0 p-0">Rp. 75.000</p>
+                      </div>
+                    </div>
+
+                    <div class="row my-1">
+                      <div class="col text-start">
+                        <p class="m-0 p-0">Tax 10%</p>
+                      </div>
+                      <div class="col text-end">
+                        <p class="m-0 p-0">Rp. 7.500</p>
+                      </div>
+                    </div>
+
+                    <div class="row my-1">
+                      <div class="col text-start">
+                        <p class="m-0 p-0">Delivery Fee</p>
+                      </div>
+                      <div class="col text-end">
+                        <p class="m-0 p-0">Rp. 12.500</p>
+                      </div>
+                    </div>
+
+                    <div class="row my-1">
+                      <div class="col text-start d-flex align-self-center">
+                        <p class="m-0 p-0 align-self-center">Disc</p>
+                        <p class="mx-2 my-0 bg-dark p-1 rounded-2 text-light">
+                          EnD2023</p>
+                      </div>
+                      <div class="col text-end align-self-center">
+                        <p class="m-0 p-0 ">Rp. 12.500</p>
+                      </div>
+                    </div>
+
+                    <div class="row my-1">
+                      <div class="col text-start">
+                        <p class="m-0 p-0 fw-bold">Total</p>
+                      </div>
+                      <div class="col text-end">
+                        <p class="m-0 p-0 fw-bold">Rp. 12.500</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="d-flex justify-content-between">
+                  <button type="button"
+                    class="fw-bold border-0 rounded-1 bg-light cancel btn text-secondary">Cancel</button>
+                  <button type="submit"
+                    class="fw-bold border-0 rounded-1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#deliveryModal" id="createOrder">Create Your
+                    Order</button>
+                </div>
+
+              </form>
             </div>
 
-          </div>
-          <div class="form-floating mb-1">
-            <textarea class="form-control" placeholder="Detail Address"
-              id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">Detail Address</label>
-          </div>
-          <div class="row gx-1">
-            <div class="col-8 form-floating mb-1">
-              <input type="text" class="form-control" id="floatingCode"
-                placeholder="Phone Number">
-              <label for="floatingPassword">Disound Code</label>
-            </div>
-            <div class="col-4 ps-2">
-              <button class="border-0 rounded-1 fw-bold fs-6"
-                style="padding: 16px 39px;">
-                Apply
-              </button>
-            </div>
+            <img src="../asset/images/icons/6982750_3333446.svg"
+              alt="delivery services" width="800px">
+
           </div>
 
-          <div class="mt-2 px-3 py-4 rounded-1 mb-4" id="purchesList">
-            <div class="m-0 p-0">
-              <div class="row purches mx-1 mb-2 pb-2">
-                <div class="col text-start px-0 align-self-center">
-                  <p class="food m-0 p-0">Korean Bowls</p>
-                </div>
-                <div class="col d-flex justify-content-between px-0">
-                  <button class="border-0 w-25 p-0 me-2 rounded-1">
-                    -
-                  </button>
-                  <input class="border-0 w-25 rounded-1 amount">
-                  <button class="border-0 w-25 p-0 ms-2 rounded-1">
-                    +
-                  </button>
-                </div>
-                <div class="col text-end px-0 align-self-center">
-                  <p class="price m-0 p-0">Rp. 25.000</p>
-                </div>
-              </div>
-              <div class="row purches mx-1 mb-2 pb-2">
-                <div class="col text-start px-0 align-self-center">
-                  <p class="food m-0 p-0">Japanese Bowls</p>
-                </div>
-                <div class="col d-flex justify-content-between px-0">
-                  <button class="border-0 w-25 p-0 me-2 rounded-1">
-                    -
-                  </button>
-                  <input class="border-0 w-25 rounded-1 amount">
-                  <button class="border-0 w-25 p-0 ms-2 rounded-1">
-                    +
-                  </button>
-                </div>
-                <div class="col text-end px-0 align-self-center">
-                  <p class="price m-0 p-0">Rp. 25.000</p>
-                </div>
-              </div>
-              <div class="row purches mx-1 mb-2 pb-2">
-                <div class="col text-start px-0 align-self-center">
-                  <p class="food m-0 p-0">Sushi</p>
-                </div>
-                <div class="col d-flex justify-content-between px-0">
-                  <button class="border-0 w-25 p-0 me-2 rounded-1">
-                    -
-                  </button>
-                  <input class="border-0 w-25 rounded-1 amount">
-                  <button class="border-0 w-25 p-0 ms-2 rounded-1">
-                    +
-                  </button>
-                </div>
-                <div class="col text-end px-0 align-self-center">
-                  <p class="price m-0 p-0">Rp. 25.000</p>
-                </div>
-              </div>
+        </div>
+
+        <div id="reservation" style="display: none;" class="w-100 mt-5">
+          <div class="d-flex justify-content-center boxshadow w-100">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+              <img src="../asset/images/icons/8351257_3886132.svg"
+                alt="reservation services" width="500px">
             </div>
+
             <div
-              class="border-top border-dark mt-3 px-1">
-              <div class="row my-1">
-                <div class="col text-start">
-                  <p class="m-0 p-0">Total Item</p>
+              class="w-50 d-flex justify-content-center align-items-center p-5 containFormReservation">
+              <form class="pt-4" style="width: 400px;">
+                <div class="form-floating mb-1">
+                  <input type="text" class="form-control" id="floatingNames"
+                    placeholder="Name">
+                  <label for="floatingInput">Name</label>
                 </div>
-                <div class="col text-end">
-                  <p class="m-0 p-0">Rp. 75.000</p>
+                <div class="form-floating mb-1">
+                  <input type="number" class="form-control" id="floatingPhones"
+                    placeholder="Phone Number">
+                  <label for="floatingPassword">Phone Number</label>
                 </div>
-              </div>
-
-              <div class="row my-1">
-                <div class="col text-start">
-                  <p class="m-0 p-0">Tax 10%</p>
+                <div class="mb-1">
+                  <select
+                    class="form-select form-select-lg mb-1 rounded-2 fs-6">
+                    <option selected>Types</option>
+                    <option value="1">Dine-In</option>
+                    <option value="2">BrithDay Party</option>
+                    <option value="3">Other</option>
+                  </select>
                 </div>
-                <div class="col text-end">
-                  <p class="m-0 p-0">Rp. 7.500</p>
+                <div class="row gx-1">
+                  <div class="col">
+                    <select
+                      class="form-select form-select-lg mb-1 rounded-2 fs-6">
+                      <option selected>Date</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="3">4</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <input type="time" class="form-control p-2">
+
+                  </div>
+                  <div class="col">
+                    <select
+                      class="form-select form-select-lg mb-1 rounded-2 fs-6">
+                      <option selected>Person</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+
+                  </div>
+
                 </div>
-              </div>
+                <div class="mb-1">
+                  <div class="row gx-1">
+                    <div class="col-4">
+                      <select
+                        class="form-select form-select-lg mb-1 rounded-2 fs-6">
+                        <option selected>Area</option>
+                        <option value="1">Bandung</option>
+                        <option value="2">Bogor</option>
+                        <option value="3">Jakarta</option>
+                        <option value="4">Tangerang</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select
+                        class="form-select form-select-lg mb-1 rounded-2 fs-6">
+                        <option selected>Branch</option>
+                        <option value="1">Jl. Jl Pegangsaan timur No 48, Jakarta
+                          Selatan</option>
+                        <option value="2">Jl Melati indah mekar No 56, Tanjung
+                          Duren</option>
+                        <option value="3">Jl Budi pekerti luhur No 82, Jakarta
+                          Utara</option>
+                      </select>
+                    </div>
+                  </div>
 
-              <div class="row my-1">
-                <div class="col text-start">
-                  <p class="m-0 p-0">Delivery Fee</p>
                 </div>
-                <div class="col text-end">
-                  <p class="m-0 p-0">Rp. 12.500</p>
+
+                <div class="d-flex justify-content-between mt-3">
+                  <button type="button"
+                    class="fw-bold border-0 rounded-1 bg-light cancel text-secondary">Cancel</button>
+                  <button type="submit"
+                    class="fw-bold border-0 rounded-1">Reservation
+                    Now</button>
                 </div>
-              </div>
 
-              <div class="row my-1">
-                <div class="col text-start d-flex align-self-center">
-                  <p class="m-0 p-0 align-self-center">Disc</p>
-                  <p class="mx-2 my-0 bg-light p-1 rounded-2"> EnD2023</p>
-                </div>
-                <div class="col text-end align-self-center">
-                  <p class="m-0 p-0 ">Rp. 12.500</p>
-                </div>
-              </div>
-
-              <div class="row my-1">
-                <div class="col text-start">
-                  <p class="m-0 p-0 fw-bold">Total</p>
-                </div>
-                <div class="col text-end">
-                  <p class="m-0 p-0 fw-bold">Rp. 12.500</p>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="d-flex justify-content-between">
-            <button type="button"
-              class="fw-bold border-0 rounded-1 bg-light cancel">Cancel</button>
-            <button type="submit"
-              class="fw-bold border-0 rounded-1">Create Your Order</button>
-          </div>
-
-        </form>
-
-        <form class="pt-4" style="width: 400px; display: none;"
-          id="reservation">
-          <div class="form-floating mb-1">
-            <input type="text" class="form-control" id="floatingNames"
-              placeholder="Name">
-            <label for="floatingInput">Name</label>
-          </div>
-          <div class="form-floating mb-1">
-            <input type="number" class="form-control" id="floatingPhones"
-              placeholder="Phone Number">
-            <label for="floatingPassword">Phone Number</label>
-          </div>
-          <div class="mb-1">
-            <select class="form-select form-select-lg mb-1 rounded-2 fs-6">
-              <option selected>Types</option>
-              <option value="1">Dine-In</option>
-              <option value="2">BrithDay Party</option>
-              <option value="3">Other</option>
-            </select>
-          </div>
-          <div class="row gx-1">
-            <div class="col">
-              <select class="form-select form-select-lg mb-1 rounded-2 fs-6">
-                <option selected>Date</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="3">4</option>
-              </select>
-            </div>
-            <div class="col">
-              <select class="form-select form-select-lg mb-1 rounded-2 fs-6">
-                <option selected>Time</option>
-                <option value="1">09:00 PM</option>
-              </select>
-
-            </div>
-            <div class="col">
-              <select class="form-select form-select-lg mb-1 rounded-2 fs-6">
-                <option selected>Person</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-
-            </div>
-
-          </div>
-          <div class="mb-1">
-            <div class="row gx-1">
-              <div class="col-4">
-                <select class="form-select form-select-lg mb-1 rounded-2 fs-6">
-                  <option selected>Area</option>
-                  <option value="1">Bandung</option>
-                  <option value="2">Bogor</option>
-                  <option value="3">Jakarta</option>
-                  <option value="4">Tangerang</option>
-                </select>
-              </div>
-              <div class="col">
-                <select class="form-select form-select-lg mb-1 rounded-2 fs-6">
-                  <option selected>Branch</option>
-                  <option value="1">Jl. Jl Pegangsaan timur No 48, Jakarta
-                    Selatan</option>
-                  <option value="2">Jl Melati indah mekar No 56, Tanjung
-                    Duren</option>
-                  <option value="3">Jl Budi pekerti luhur No 82, Jakarta
-                    Utara</option>
-                </select>
-              </div>
+              </form>
             </div>
 
           </div>
 
-          <div class="d-flex justify-content-between mt-3">
-            <button type="button"
-              class="fw-bold border-0 rounded-1 bg-light cancel">Cancel</button>
-            <button type="submit"
-              class="fw-bold border-0 rounded-1">Create Your Order</button>
-          </div>
+        </div>
 
-        </form>
+        <div id="modal">
+        </div>
+
       </section>
 
     </main>
@@ -374,6 +422,7 @@
     </footer>
 
     <script src="../js/orders.js"></script>
+    <script src="../js/navbar.js"></script>
 
   </body>
 </html>
