@@ -1,3 +1,7 @@
+body {
+    padding: 0;
+    margin: 0;
+}
 button,
 .orderNow {
     background-color: #820000;
@@ -21,6 +25,11 @@ h1 {
 h3,
 h5 {
     font-family: Hind;
+}
+
+.nav-scrolled {
+    background-color: #82000070;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
 }
 
 .nav-link {
@@ -123,11 +132,12 @@ header {
 #catering {
     background-color: rgba(0, 0, 0, 0.21);
 }
-footer {
-    background-color: rgba(36, 14, 14, 0.13);
-}
+
 .favoriteMenu {
     @media (max-width: 575.98px) {
         justify-content: flex-start;
     }
+}
+footer {
+    background-color: rgba(36, 14, 14, 0.13);
 }

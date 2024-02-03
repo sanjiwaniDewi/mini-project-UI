@@ -28,8 +28,21 @@ h6 {
     font-size: 24px !important;
     margin-left: 4rem !important;
 }
-.card-body {
-    background-color: rgba(130, 0, 0, 0.45);
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.nav-scrolled {
+    background-color: rgba(227, 224, 222, 0.5);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.nav-link {
+    font-family: Nunito, sans-serif;
+    color: rgba(0, 0, 0, 0.938);
+    font-size: 18px;
+    font-weight: 800;
 }
 
 footer {
@@ -43,9 +56,62 @@ footer {
     outline: none;
 }
 #purchesList {
-    background-color: #ecd8d8 !important;
+    background-color: #fff7f7 !important;
 }
 .cancel {
     color: rgba(0, 0, 0, 0.44);
     background-color: rgba(236, 216, 216, 0.31);
+}
+input,
+textarea,
+select {
+    background-color: #fff7f7 !important;
+}
+.boxshadow {
+    border-radius: 32px;
+    background: #faf5f5;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.containForm {
+    background-color: #820000;
+    border-radius: 32px 0 0 32px;
+}
+
+.containFormReservation {
+    background-color: #820000;
+    border-radius: 0 32px 32px 0;
+}
+
+.containForm button,
+.containFormReservation button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 13px 15px;
+}
+.containForm button:hover,
+.containFormReservation button:hover {
+    background-color: #0000003f;
+    color: #ffffff;
+}
+
+.wrap .carousels {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.warp {
+    max-width: 1200px;
+}
+.carousels .card {
+    margin-right: 20px;
+}
+
+@media (max-width: 575.98px) {
+    .carousels .card {
+        width: 16rem !important;
+    }
 }
